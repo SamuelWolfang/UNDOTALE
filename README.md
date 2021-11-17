@@ -13,8 +13,8 @@ The end result should allow anyone to modify a pre-made template (or create thei
 Basically Unitale, but with Godot and GDScript. You'll be able to make your own mods with the help of a GUI for development (contrary to Lua) and a plain simple simil-python programming language, very easy to understand and manipulate.
 
 ## What works at the moment?
-As you may have guess, the engine is not finished yet.
-I semi-finished it a few months ago before deciding to abandon it and move to other things.
+As you may have guessed, the engine is not finished yet.
+I semi-finished it a few months ago before deciding to abandon it and move on to other things.
 I've started rewriting it from scratch a few weeks ago, and this is where we stand now:
 
 | Mechanic | Status |
