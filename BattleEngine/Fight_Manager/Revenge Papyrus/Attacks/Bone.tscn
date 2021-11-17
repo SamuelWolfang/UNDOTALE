@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://BattleEngine/Fight_Manager/Revenge Papyrus/Attacks/BoneTest.png" type="Texture" id=1]
+[ext_resource path="res://BattleEngine/Fight_Manager/Revenge Papyrus/Attacks/Bone.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 2.5, 2.5 )
+
+[node name="Bone" type="KinematicBody2D" groups=[
+"damage",
+]]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource( 2 )
+
+[node name="Bone" type="NinePatchRect" parent="."]
+margin_right = 13.0
+margin_bottom = 11.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource( 1 )
+region_rect = Rect2( 0, 0, 13, 11 )
+patch_margin_top = 5
+patch_margin_bottom = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 6.5, 0 )
+shape = SubResource( 1 )
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
+position = Vector2( 4.79221, 4.6929 )
+scale = Vector2( 0.51735, 1 )
+rect = Rect2( -10, -10, 26.5, 20 )
+
+[connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_screen_exited"]

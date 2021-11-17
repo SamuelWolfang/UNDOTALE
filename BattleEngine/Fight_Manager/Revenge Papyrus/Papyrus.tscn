@@ -1,0 +1,384 @@
+[gd_scene load_steps=31 format=2]
+
+[ext_resource path="res://BattleEngine/Fight_Manager/Revenge Papyrus/Sprite/legs1.png" type="Texture" id=1]
+[ext_resource path="res://BattleEngine/Bubble/bubble_5.png" type="Texture" id=2]
+[ext_resource path="res://BattleEngine/Bubble/bubble_1.png" type="Texture" id=3]
+[ext_resource path="res://BattleEngine/Bubble/bubble_4.png" type="Texture" id=4]
+[ext_resource path="res://BattleEngine/Bubble/bubble_3.png" type="Texture" id=5]
+[ext_resource path="res://BattleEngine/Fight_Manager/Revenge Papyrus/Papyrus.gd" type="Script" id=6]
+[ext_resource path="res://Shared/Text/Blitter.tscn" type="PackedScene" id=7]
+[ext_resource path="res://BattleEngine/Bubble/bubble_6.png" type="Texture" id=8]
+[ext_resource path="res://BattleEngine/Bubble/bubble_2.png" type="Texture" id=9]
+[ext_resource path="res://BattleEngine/Bubble/bubble_8.png" type="Texture" id=10]
+[ext_resource path="res://BattleEngine/Bubble/bubble_7.png" type="Texture" id=11]
+[ext_resource path="res://BattleEngine/Fight_Manager/Revenge Papyrus/Sprite/legs0.png" type="Texture" id=12]
+[ext_resource path="res://BattleEngine/Fight_Manager/Revenge Papyrus/Sprite/legs2.png" type="Texture" id=13]
+[ext_resource path="res://BattleEngine/Fight_Manager/Revenge Papyrus/Sprite/normal2.png" type="Texture" id=14]
+[ext_resource path="res://BattleEngine/Fight_Manager/Revenge Papyrus/arms/right.png" type="Texture" id=15]
+[ext_resource path="res://BattleEngine/Fight_Manager/Revenge Papyrus/head/head_0.png" type="Texture" id=16]
+[ext_resource path="res://BattleEngine/Fight_Manager/Revenge Papyrus/arms/left.png" type="Texture" id=17]
+[ext_resource path="res://Shaders/Skew.shader" type="Shader" id=18]
+[ext_resource path="res://BattleEngine/Fight_Manager/Revenge Papyrus/scarf test/0.png" type="Texture" id=19]
+[ext_resource path="res://BattleEngine/Fight_Manager/Revenge Papyrus/scarf test/1.png" type="Texture" id=20]
+[ext_resource path="res://BattleEngine/Fight_Manager/Revenge Papyrus/scarf test/2.png" type="Texture" id=21]
+[ext_resource path="res://BattleEngine/Fight_Manager/Revenge Papyrus/scarf test/3.png" type="Texture" id=22]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="ShaderMaterial" id=2]
+shader = ExtResource( 18 )
+shader_param/topleft = Vector2( -3.13994, 0 )
+shader_param/topright = Vector2( -3.87349, 0 )
+shader_param/bottomleft = null
+shader_param/bottomright = null
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 12 ), ExtResource( 1 ), ExtResource( 13 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 9 ), ExtResource( 5 ), ExtResource( 4 ), ExtResource( 2 ), ExtResource( 8 ), ExtResource( 11 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "default",
+"speed": 0.0
+} ]
+
+[sub_resource type="DynamicFontData" id=5]
+antialiased = false
+hinting = 0
+font_path = "res://Fonts/papyrus.ttf"
+
+[sub_resource type="DynamicFont" id=6]
+extra_spacing_top = -2
+extra_spacing_char = 2
+extra_spacing_space = -5
+font_data = SubResource( 5 )
+
+[sub_resource type="Animation" id=7]
+length = 0.8
+loop = true
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite/Legs:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.05, 0.4, 0.45 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 1, 2, 3, 0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite/Bust:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 2, 1, 2 ),
+"update": 0,
+"values": [ Vector2( 2, 2.5 ), Vector2( 11, 3 ), Vector2( 2, 2.5 ), Vector2( -5, 3 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Sprite/left:position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.1, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 2, 1, 2 ),
+"update": 0,
+"values": [ Vector2( -20.949, -4 ), Vector2( -11, -1.5 ), Vector2( -20.949, -4 ), Vector2( -27, -1.5 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Sprite/right:position")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.1, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 2, 1, 2 ),
+"update": 0,
+"values": [ Vector2( 18.276, -7 ), Vector2( 26, -5 ), Vector2( 18.276, -7 ), Vector2( 15, -5 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Sprite/head_0:position")
+tracks/4/interp = 2
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.1, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 2, 1, 2 ),
+"update": 0,
+"values": [ Vector2( 1.057, -10 ), Vector2( 8.974, -7 ), Vector2( 1.057, -10 ), Vector2( -4.48, -7 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Sprite/Legs:material:shader_param/topright")
+tracks/5/interp = 2
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.1, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 5, 0 ), Vector2( 0, 0 ), Vector2( -5, 0 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Sprite/Legs:material:shader_param/topleft")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 0.1, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 5, 0 ), Vector2( 0, 0 ), Vector2( -5, 0 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Sprite/left:rotation_degrees")
+tracks/7/interp = 2
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 3.0, -3.0 ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Sprite/AnimatedSprite:position")
+tracks/8/interp = 2
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 0.1, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 2, 1, 2 ),
+"update": 0,
+"values": [ Vector2( 31.8791, -14.9433 ), Vector2( 38.8526, -13.2829 ), Vector2( 29.8639, -13.9945 ), Vector2( 21.4778, -14.2762 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Sprite/right:rotation_degrees")
+tracks/9/interp = 2
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0.05, 0.15, 0.45, 0.55 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 3.0, 1.71429, -3.0 ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "Still"
+length = 0.8
+loop = true
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite/Legs:frame")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite/Bust:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -0.666672, 2.2037 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Sprite/left:position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -23.6157, -4.2963 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Sprite/right:position")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 15.6093, -7.2963 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Sprite/head_0:position")
+tracks/4/interp = 2
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -1.60967, -10.2963 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Sprite/Legs:material:shader_param/topright")
+tracks/5/interp = 2
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Sprite/Legs:material:shader_param/topleft")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Sprite/left:rotation_degrees")
+tracks/7/interp = 2
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 3.0 ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Sprite/AnimatedSprite:position")
+tracks/8/interp = 2
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 29.2124, -15.2396 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Sprite/right:rotation_degrees")
+tracks/9/interp = 2
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -0.589286 ]
+}
+
+[node name="Papyrus" type="Node2D"]
+script = ExtResource( 6 )
+
+[node name="Sprite" type="Node2D" parent="."]
+scale = Vector2( 2, 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Sprite"]
+position = Vector2( 21.9805, -14.3679 )
+frames = SubResource( 1 )
+frame = 3
+playing = true
+
+[node name="left" type="Sprite" parent="Sprite"]
+position = Vector2( -26.8164, -1.63039 )
+rotation = 0.00455168
+texture = ExtResource( 17 )
+offset = Vector2( 5, 10 )
+
+[node name="Bust" type="Sprite" parent="Sprite"]
+position = Vector2( -4.76692, 2.97392 )
+texture = ExtResource( 14 )
+
+[node name="Legs" type="AnimatedSprite" parent="Sprite"]
+material = SubResource( 2 )
+position = Vector2( 1.14057, 40.2599 )
+rotation = -0.00890005
+frames = SubResource( 3 )
+
+[node name="right" type="Sprite" parent="Sprite"]
+position = Vector2( 15.0801, -5.10431 )
+rotation = -0.0503374
+texture = ExtResource( 15 )
+offset = Vector2( 7, 19 )
+
+[node name="head_0" type="Sprite" parent="Sprite"]
+position = Vector2( -4.30222, -7.15647 )
+texture = ExtResource( 16 )
+offset = Vector2( 0, -15 )
+
+[node name="Bubble" type="Node2D" parent="."]
+visible = false
+position = Vector2( 81.2574, 51.8275 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Options" type="AnimatedSprite" parent="Bubble"]
+position = Vector2( 94.8332, -42.1519 )
+frames = SubResource( 4 )
+frame = 2
+
+[node name="Blitter" parent="Bubble" instance=ExtResource( 7 )]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 17.0
+margin_top = -81.0
+margin_right = 202.0
+margin_bottom = 2.0
+custom_fonts/normal_font = SubResource( 6 )
+bbcode_text = "HELLO! NYEH HE"
+text = "HELLO! NYEH HE"
+skippable = true
+
+[node name="Animations" type="AnimationPlayer" parent="."]
+playback_default_blend_time = 0.1
+anims/Idle = SubResource( 7 )
+anims/Still = SubResource( 8 )

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/undyne3.wav-392aa232a0310aa700d6ddaec44a345f.sample"
+
+[deps]
+
+source_file="res://Shared/Text/Clicks/Files/undyne3.wav"
+dest_files=[ "res://.import/undyne3.wav-392aa232a0310aa700d6ddaec44a345f.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

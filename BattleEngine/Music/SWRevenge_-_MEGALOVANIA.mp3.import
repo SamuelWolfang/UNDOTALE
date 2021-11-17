@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/SWRevenge_-_MEGALOVANIA.mp3-f82c2b6ba04eed4212a56fc447ddc136.mp3str"
+
+[deps]
+
+source_file="res://BattleEngine/Music/SWRevenge_-_MEGALOVANIA.mp3"
+dest_files=[ "res://.import/SWRevenge_-_MEGALOVANIA.mp3-f82c2b6ba04eed4212a56fc447ddc136.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

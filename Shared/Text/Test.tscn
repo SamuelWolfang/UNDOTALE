@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Shared/Soul/Soul.tscn" type="PackedScene" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 85.2302, 47.7321 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2( 144.672, 107.349 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+rotation = 3.14159
+shape = SubResource( 1 )
+one_way_collision = true
+
+[node name="Soul" parent="." instance=ExtResource( 1 )]
+position = Vector2( 157.047, 113.313 )
+currentFunction = "red"

@@ -1,0 +1,56 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://BattleEngine/Fight_Manager/SansDrip/Enemies/Drip Sans.png" type="Texture" id=1]
+[ext_resource path="res://BattleEngine/Fight_Manager/SansDrip/Enemies/SansDrip.gd" type="Script" id=2]
+[ext_resource path="res://BattleEngine/Bubble/bubble_1.png" type="Texture" id=3]
+[ext_resource path="res://BattleEngine/Bubble/bubble_5.png" type="Texture" id=4]
+[ext_resource path="res://BattleEngine/Bubble/bubble_7.png" type="Texture" id=5]
+[ext_resource path="res://BattleEngine/Bubble/bubble_8.png" type="Texture" id=6]
+[ext_resource path="res://BattleEngine/Bubble/bubble_4.png" type="Texture" id=7]
+[ext_resource path="res://BattleEngine/Bubble/bubble_3.png" type="Texture" id=8]
+[ext_resource path="res://BattleEngine/Bubble/bubble_6.png" type="Texture" id=9]
+[ext_resource path="res://BattleEngine/Bubble/bubble_2.png" type="Texture" id=10]
+[ext_resource path="res://Shared/Text/Blitter.tscn" type="PackedScene" id=11]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 10 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 4 ), ExtResource( 9 ), ExtResource( 5 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "default",
+"speed": 0.0
+} ]
+
+[sub_resource type="DynamicFontData" id=2]
+antialiased = false
+hinting = 0
+font_path = "res://Fonts/pixel-comic-sans-undertale-sans-font.ttf"
+
+[sub_resource type="DynamicFont" id=3]
+size = 14
+extra_spacing_top = -2
+extra_spacing_char = 2
+extra_spacing_space = 7
+font_data = SubResource( 2 )
+
+[node name="TestEnemy" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 1 )
+
+[node name="Bubble" type="Node2D" parent="."]
+visible = false
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Bubble"]
+position = Vector2( 94.8332, -42.1519 )
+frames = SubResource( 1 )
+
+[node name="Blitter" parent="Bubble" instance=ExtResource( 11 )]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 69.0
+margin_top = -87.0
+margin_right = 135.0
+margin_bottom = 2.0
+custom_fonts/normal_font = SubResource( 3 )
+skippable = true

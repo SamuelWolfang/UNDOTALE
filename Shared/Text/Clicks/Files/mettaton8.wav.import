@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/mettaton8.wav-a2ec9dca93f4f4ac80092ba0729f12bb.sample"
+
+[deps]
+
+source_file="res://Shared/Text/Clicks/Files/mettaton8.wav"
+dest_files=[ "res://.import/mettaton8.wav-a2ec9dca93f4f4ac80092ba0729f12bb.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

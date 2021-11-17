@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/gaster4.wav-453db0c47213f051165d79ec8d34e836.sample"
+
+[deps]
+
+source_file="res://Shared/Text/Clicks/Files/gaster4.wav"
+dest_files=[ "res://.import/gaster4.wav-453db0c47213f051165d79ec8d34e836.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

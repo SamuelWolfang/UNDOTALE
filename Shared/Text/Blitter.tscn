@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Shared/Text/Blitter.gd" type="Script" id=2]
+[ext_resource path="res://Shared/Text/RichLabelEffects/Tremble.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFontData" id=1]
+antialiased = false
+hinting = 0
+font_path = "res://Fonts/DTM-Mono.otf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 27
+extra_spacing_top = -2
+extra_spacing_char = 2
+extra_spacing_space = 7
+font_data = SubResource( 1 )
+
+[sub_resource type="RichTextEffect" id=3]
+script = ExtResource( 3 )
+
+[node name="Blitter" type="RichTextLabel"]
+margin_right = 168.0
+margin_bottom = 110.0
+mouse_filter = 2
+custom_fonts/normal_font = SubResource( 2 )
+bbcode_enabled = true
+bbcode_text = "Hello!"
+text = "Hello!"
+scroll_active = false
+custom_effects = [ SubResource( 3 ) ]
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Click" type="AudioStreamPlayer" parent="."]
+volume_db = -10.0
+
+[node name="Timer" type="Timer" parent="."]
+process_mode = 0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_text_timeout"]

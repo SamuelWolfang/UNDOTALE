@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/snd_damage.wav-2b23056caf11c785a9b3604afb02200a.sample"
+
+[deps]
+
+source_file="res://Shared/Text/Clicks/Files/snd_damage.wav"
+dest_files=[ "res://.import/snd_damage.wav-2b23056caf11c785a9b3604afb02200a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

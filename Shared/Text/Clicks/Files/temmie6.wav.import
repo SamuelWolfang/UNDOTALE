@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/temmie6.wav-a4f1471e8176f1bb601736e576bf5b90.sample"
+
+[deps]
+
+source_file="res://Shared/Text/Clicks/Files/temmie6.wav"
+dest_files=[ "res://.import/temmie6.wav-a4f1471e8176f1bb601736e576bf5b90.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

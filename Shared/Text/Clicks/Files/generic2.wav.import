@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/generic2.wav-0660c2a99c9676cff472180c0bc6bf12.sample"
+
+[deps]
+
+source_file="res://Shared/Text/Clicks/Files/generic2.wav"
+dest_files=[ "res://.import/generic2.wav-0660c2a99c9676cff472180c0bc6bf12.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

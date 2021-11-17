@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/asgore.wav-cb9a1a48afb8efc76f3f438a4df65cc1.sample"
+
+[deps]
+
+source_file="res://Shared/Text/Clicks/Files/asgore.wav"
+dest_files=[ "res://.import/asgore.wav-cb9a1a48afb8efc76f3f438a4df65cc1.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
