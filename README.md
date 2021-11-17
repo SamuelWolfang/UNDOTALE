@@ -1,3 +1,7 @@
+### Discontinued :(
+I sadly lost interest, don't really want to work on this anymore. Not alone, that is. If you wish to contribute, feel free to contact me or fork this!
+It's highly encouraged! <3
+
 # _UNDOTALE_
 An UNDERTALE Engine recreated inside of Godot!
 
