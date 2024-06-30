@@ -66,5 +66,3 @@ In case you have any issue you would like to disclose, down here you can find se
 
 _Discord tag:_ **samuelwolfang**
 _Email:_ [soupsam02@gmail.com](mailto:soupsam02@gmail.com)
-
-Copyright (c) [2024] [alias Samuel Wolfang]. [![UNDOTALE Icon](https://i.imgur.com/DBLxrrj.png)](https://www.youtube.com/channel/UCRzHxOux8-jpVgnPkJVWA-w)
