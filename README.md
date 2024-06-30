@@ -64,9 +64,7 @@ Same goes for the fonts included:
 ## CONTACTS
 In case you have any issue you would like to disclose, down here you can find several contact info.
 
-_Discord tag:_ **Samuel Wolfang#3425**
+_Discord tag:_ **samuelwolfang**
 _Email:_ [soupsam02@gmail.com](mailto:soupsam02@gmail.com)
 
-Copyright (c) [2021] [alias Samuel Wolfang]. [![UNDOTALE Icon](https://i.imgur.com/DBLxrrj.png)](https://www.youtube.com/channel/UCRzHxOux8-jpVgnPkJVWA-w)
-
-**_PLEASE_** **DO NOT SELL.**
+Copyright (c) [2024] [alias Samuel Wolfang]. [![UNDOTALE Icon](https://i.imgur.com/DBLxrrj.png)](https://www.youtube.com/channel/UCRzHxOux8-jpVgnPkJVWA-w)
