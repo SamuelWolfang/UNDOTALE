@@ -45,8 +45,8 @@ Requirements:
 6. Have fun messing around!
 
 ## License
-The project is free to use only for **NON-commercial purposes. Do NOT sell this.**
-Doing so results in copyright infringement torwards the current UNDERTALE owner.
+The project is free and falls under the MIT license.
+Selling a compiled version of this project as is without removing UNDERTALE assets, however, will result in copyright infringement torwards the current UNDERTALE owner.
 *UNDERTALE is a creation of Toby Fox.*
 Most of the assets were taken or copied from them and are therefore not mine.
 Only thing I have to take credit for is the code I wrote and nothing else.
